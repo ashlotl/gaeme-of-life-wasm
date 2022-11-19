@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <title>idk anymore</title>
+    <style>
+        body {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            overflow: hidden;
+        }
+
+        #rust_mem_canvas {
+            image-rendering: pixelated;
+            height: 85vmin;
+            box-shadow: 0px -0.2vh 1vh 1.5vh #cafff4;
+            margin-bottom: 5vh;
+        }
+
+        #pause {
+            position: relative;
+            height: 2.5vh;
+            width: 100px;
+
+            margin-bottom: 4vh;
+            margin-top: 2vh;
+            padding: 0px;
+        }
+
+        #pause>div {
+            position: absolute;
+            font-size: 90%;
+            bottom: 5%;
+            top: 5%;
+            left: 1%;
+            right: 1%;
+            text-align: center;
+            line-height: 1.6vh;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="pause">
+        <div id="pause_div">pause</div>
+    </button>
+    <br></br>
+    <canvas id="rust_mem_canvas" width=100 height=100></canvas>
+    <script type="module" src="/network_work_groups.js"></script>
+</body>
+
+</html>
